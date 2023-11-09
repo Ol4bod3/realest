@@ -22,7 +22,7 @@ const Property = ({
 }) => {
   return (
     <Link href={`/property/${externalID}`} passHref>
-      <Flex className="flex-wrap w-[420px] p-5 pt-0 justify-start cursor-pointer">
+      <Flex className="flex-wrap justify-start w-full p-5 pt-0 cursor-pointer">
         <Box>
           <Image
             src={
@@ -36,18 +36,11 @@ const Property = ({
           />
         </Box>
         <Box className="w-full ">
-          <Flex
-            className="pt-2 items-center
-          justify-between
-          "
-          >
-            <Flex
-              className="items-center justify-space-between
-            "
-            >
-              <Box className="pr-3 text-gray-400 flex items-center space-x-2">
+          <Flex className="items-center justify-between pt-2 ">
+            <Flex className="items-center justify-space-between ">
+              <Box className="flex items-center pr-3 space-x-2 text-gray-400">
                 {isVerified && <GoVerified />}
-                <Text className="font-bold text-lg">
+                <Text className="text-lg font-bold">
                   AED {millify(price)} {rentFrequency && `/${rentFrequency}`}
                 </Text>
               </Box>
@@ -56,7 +49,7 @@ const Property = ({
               <Avatar className="text-sm" src={agency?.logo?.url}></Avatar>
             </Box>
           </Flex>
-          <div className="space-x-4 p-1 flex items-center justify-center text-blue-400  ">
+          <div className="flex items-center justify-center p-1 space-x-4 text-blue-400 ">
             {rooms} {" | "} <FaBed /> {" | "} {baths}
             <FaBath /> {" | "} {millify(area)} sqft <BsGridFill />
           </div>
