@@ -21,7 +21,7 @@ const Banner = ({
         <Text className="pt-3 pb-3 text-2xl text-gray-300">
           {desc1} <br /> {desc2}
         </Text>
-        <button className="p-2 px-4 text-lg text-gray-900 bg-blue-200 rounded-sm hover:bg-transparent hover:border hover:border-blue-300 hover:text-white">
+        <button className="p-2 px-4 text-lg text-gray-900 bg-blue-200 hover:bg-transparent hover:border hover:border-blue-300 hover:text-white rounded-xl">
           <Link href={linkName}>{buttonText}</Link>
         </button>
       </Box>
