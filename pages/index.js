@@ -19,7 +19,7 @@ const index = ({ propsForRent, propsForSale }) => {
         imageUrl="https://images.mktw.net/im-388199?width=700&size=1.3333333333333333"
       />
 
-      <Flex className="flex-wrap justify-center items-center">
+      <Flex className="flex-wrap items-center justify-center">
         {propsForRent.map((prop) => (
           <Property property={prop} key={prop.id} />
         ))}
@@ -35,7 +35,7 @@ const index = ({ propsForRent, propsForSale }) => {
         linkName="/search?purpose=for-sale"
         imageUrl="https://images.mktw.net/im-388199?width=700&size=1.3333333333333333"
       />
-      <Flex className="flex-wrap">
+      <Flex className="flex-wrap items-center justify-center">
         {propsForSale.map((prop) => (
           <Property property={prop} key={prop.id} />
         ))}

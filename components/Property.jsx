@@ -22,7 +22,7 @@ const Property = ({
 }) => {
   return (
     <Link href={`/property/${externalID}`} passHref>
-      <Flex className="flex-wrap md:w-[420px] w-full p-5 pt-0 justify-start cursor-pointer">
+      <Flex className="flex-wrap md:w-[320px] lg:w-[420px] w-full p-5 pt-0 justify-start items-center cursor-pointer">
         <Box>
           <Image
             src={
